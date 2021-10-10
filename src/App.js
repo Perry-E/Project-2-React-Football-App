@@ -5,7 +5,7 @@ import Main from "./Main";
 function App() {
   const API_Key = process.env.REACT_APP_API_FOOTBALL_KEY;
   const [status, setStatus] = useState("idle");
-  const [leagueTable, setLeagueTable] = useState();
+  //const [leagueTable, setLeagueTable] = useState();
   const [upcoming, setUpcoming] = useState();
   const LeagueTable = () => {
 
