@@ -117,11 +117,11 @@ export default function SideBar() {
   );
 
   return (
-    <div style={{ backgroundColor: "#dc2f02", borderRadius: "3%" }}>
+    <div style={{ backgroundColor: "#e85d04", borderRadius: "25px" }}>
       {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <h1 style={{ textAlignVertical: "center", textAlign: "center" }}>
+          <h1 style={{ textAlignVertical: "center", textAlign: "center", padding:"0px 0px 50px 0px" }}>
             Football App
           </h1>
           <Drawer

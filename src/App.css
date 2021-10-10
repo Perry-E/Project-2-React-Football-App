@@ -1,8 +1,11 @@
-/* .App {
-  text-align: center;
+.App {
+  /* text-align: center; */
+  font-family: "Roboto", sans-serif;
+  background-color: #ffddd2;
+  border-radius: 25px;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -36,4 +39,3 @@
     transform: rotate(360deg);
   }
 } */
-
