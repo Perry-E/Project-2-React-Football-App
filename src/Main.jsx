@@ -7,13 +7,14 @@ import UpcomingMatches from "./Components/UpcomingMatches";
 const Main = (props) => {
   //console.log("Main props", props?.value?.parameters?.season);
   //const SeasonYear = props?.value?.parameters?.season;
-  console.log("main", props.upcoming);
+  console.log("upcoming (main)", props.upcoming);
+  console.log("table (main)", props.leagueTable);
   return (
     <>
     <Switch>
 
       <Route path="/leaguestandings">
-          <LeagueStandings/>
+          <LeagueStandings leagueTable={props.leagueTable}/>
       </Route>
       <Route path="/:upcomingmatches">
           <UpcomingMatches upcoming={props.upcoming}/>
