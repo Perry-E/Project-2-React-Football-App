@@ -6,7 +6,7 @@ const LeagueStandings = () => {
     <>
       <div>
         <SideBar />
-        <h1>League Standings</h1>
+        <h1 style={{textAlign:"center"}}>League Standings</h1>
       </div>
     </>
   );

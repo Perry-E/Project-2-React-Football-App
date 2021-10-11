@@ -1,9 +1,13 @@
 import React from "react";
+import SideBar from "./SideBar";
 //import { format } from 'date-fns'
+// import { useParams } from "react-router-dom";
 
 const UpcomingMatches = (props) => {
   console.log("Upcoming matches", props.upcoming?.response);
   const upcomingGames = props.upcoming?.response;
+//   const params = useParams();
+//   console.log("params dashboard", params);
   //   format (new Date(2021, 1, 11), "dd/MM/yyyy")
   //   const dates = [new props?..fixture?.date]
 
@@ -11,6 +15,7 @@ const UpcomingMatches = (props) => {
     <>
       <div>
         <div>
+            <SideBar/>
           <h1 style={{ textAlign: "center" }}>Upcoming Matches (EPL)</h1>
           {upcomingGames?.map((item) => {
             return (

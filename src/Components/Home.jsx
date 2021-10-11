@@ -1,14 +1,17 @@
 import React from "react";
-import SideBar from "./Components/SideBar";
-import UpcomingMatches from "./Components/UpcomingMatches";
+import SideBar from "./SideBar";
 
 const Home = (props) => {
   console.log("Home", props);
   return (
+      <>
     <div>
       <SideBar />
-      <UpcomingMatches upcoming={props.upcoming} />
     </div>
+    <div style={{textAlign:"center"}}>
+        <h1>Home Page</h1>
+    </div>
+    </>
   );
 };
 

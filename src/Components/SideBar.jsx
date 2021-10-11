@@ -7,9 +7,8 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-// import InboxIcon from "@mui/icons-material/MoveToInbox";
-// import MailIcon from "@mui/icons-material/Mail";
-import { Route, Redirect, Link } from "react-router-dom";
+import SportsSoccerSharpIcon from "@mui/icons-material/SportsSoccerSharp";
+import { Link } from "react-router-dom";
 
 export default function SideBar() {
   const [state, setState] = React.useState({
@@ -48,57 +47,50 @@ export default function SideBar() {
         </button>
         {
           <>
-            {/* <Route path="/"> */}
-            <Link to="/">
-              <ListItem
-                button
-                key={"Home"}
-                onClick={() => console.log("Home Clicked")}
-              >
-                <ListItemIcon>
-                  {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
-                </ListItemIcon>
-                <ListItemText />
-                Home
-                <ListItemText />
-              </ListItem>
-            </Link>
-            {/* </Route> */}
-            {/* <Route path="/upcomingmatches"> */}
-            <Link to="/upcomingmatches">
-              <ListItem
-                button
-                key={"Upcoming Matches"}
-                onClick={() => console.log("Upcoming Matches Clicked")}
-              >
-                <ListItemIcon>
-                  {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
-                </ListItemIcon>
-                <ListItemText />
-                Upcoming Matches
-                <ListItemText />
-              </ListItem>
-            </Link>
-            {/* </Route> */}
-            {/* <Route path="/leaguetable"> */}
-            <Link to="/leaguetable">
-              <ListItem
-                button
-                key={"League Table"}
-                onClick={() => console.log("League Table Clicked")}
-              >
-                <ListItemIcon>
-                  {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
-                </ListItemIcon>
-                <ListItemText />
-                League Table
-                <ListItemText />
-              </ListItem>
-            </Link>
-            {/* </Route> */}
-            <Route>
-              <Redirect to="/" />
-            </Route>
+            <div>
+              <Link to="/">
+                <ListItem
+                  button
+                  key={"Home"}
+                  onClick={() => console.log("Home Clicked")}
+                >
+                  <ListItemIcon>{<SportsSoccerSharpIcon />}</ListItemIcon>
+                  <ListItemText />
+                  Home
+                  <ListItemText />
+                </ListItem>
+              </Link>
+            </div>
+
+            <div>
+              <Link to="/:upcomingmatches">
+                <ListItem
+                  button
+                  key={"Upcoming Matches"}
+                  onClick={() => console.log("Upcoming Matches Clicked")}
+                >
+                  <ListItemIcon>{<SportsSoccerSharpIcon />}</ListItemIcon>
+                  <ListItemText />
+                  Upcoming Matches
+                  <ListItemText />
+                </ListItem>
+              </Link>
+            </div>
+
+            <div>
+              <Link to="/leaguestandings">
+                <ListItem
+                  button
+                  key={"League Table"}
+                  onClick={() => console.log("League Table Clicked")}
+                >
+                  <ListItemIcon>{<SportsSoccerSharpIcon />}</ListItemIcon>
+                  <ListItemText />
+                  League Table
+                  <ListItemText />
+                </ListItem>
+              </Link>
+            </div>
           </>
         }
       </List>
@@ -121,7 +113,13 @@ export default function SideBar() {
       {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <h1 style={{ textAlignVertical: "center", textAlign: "center", padding:"0px 0px 50px 0px" }}>
+          <h1
+            style={{
+              textAlignVertical: "center",
+              textAlign: "center",
+              padding: "0px 0px 50px 0px",
+            }}
+          >
             Football App
           </h1>
           <Drawer

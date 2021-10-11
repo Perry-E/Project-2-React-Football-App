@@ -1,5 +1,8 @@
 import React from "react";
-import Home from "./Home";
+import Home from "./Components/Home";
+import { Route, Switch } from "react-router-dom";
+import LeagueStandings from "./Components/LeagueStandings";
+import UpcomingMatches from "./Components/UpcomingMatches";
 
 const Main = (props) => {
   //console.log("Main props", props?.value?.parameters?.season);
@@ -7,9 +10,19 @@ const Main = (props) => {
   console.log("main", props.upcoming);
   return (
     <>
-      {/* <h1>MAIN PAGE</h1> */}
-      <Home upcoming={props.upcoming} />
-      {/* <h1>{SeasonYear}</h1> */}
+    <Switch>
+
+      <Route path="/leaguestandings">
+          <LeagueStandings/>
+      </Route>
+      <Route path="/:upcomingmatches">
+          <UpcomingMatches upcoming={props.upcoming}/>
+      </Route>
+      <Route exact path="/">
+      <Home upcoming={props.upcoming}/> 
+      </Route>
+     
+    </Switch>
     </>
   );
 };

@@ -45,7 +45,8 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <h1>Football App</h1> */}
         {/* <Main value={leagueTable}/> */}
-        <Main upcoming={upcoming} style={{ fontFamily: "sans-serif" }} />
+        <Main style={{ fontFamily: "sans-serif" }} upcoming={upcoming}/>
+        {/*upcoming={upcoming} ADD TO <MAIN/>*/}
       </header>
     </div>
   );
