@@ -6,17 +6,33 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import SideBar from "./SideBar";
+import SideBar from "../SideBar";
 
-export default function LeagueStandings(props) {
-  const leagueTable = props.leagueTable?.response[0].league.standings[0];
-  console.log("Table (LeagueStandings)", leagueTable);
+export default function LeagueStandingsLaLiga(props) {
+  console.log("League Standings La Liga", props.leagueTable?.[2].response[0]?.league?.standings[0]);
+  const leagueName = props.leagueTable?.[2].response[0]?.league?.name;
+  const leagueLogo = props.leagueTable?.[2].response[0]?.league.logo;
+  const leagueFlag = props.leagueTable?.[2].response[0]?.league?.flag;
+  const leagueTable = props.leagueTable?.[2].response[0]?.league?.standings[0];
+  console.log("Table La Liga (LeagueStandings)", leagueTable);
 
   return (
     <>
       <div>
         <SideBar />
-        <h1 style={{ textAlign: "center" }}>League Standings</h1>
+        <h1 style={{ textAlign: "center" }}>
+          <img
+            src={leagueLogo}
+            alt="League Logo"
+            style={{ height: "50px", padding: "0 auto" }}
+          />
+          {leagueName}
+          <img
+            src={leagueFlag}
+            alt="League Flag"
+            style={{ height: "28px", margin: " 0 10px" }}
+          />
+        </h1>
       </div>
       <Paper sx={{ width: "100%", overflow: "hidden" }}>
         <TableContainer sx={{ maxHeight: 750 }}>

@@ -1,13 +1,15 @@
 import React from "react";
 import SideBar from "./SideBar";
+import { Link } from "react-router-dom";
 //import { format } from 'date-fns'
-// import { useParams } from "react-router-dom";
 
 const UpcomingMatches = (props) => {
   console.log("Upcoming matches", props.upcoming?.response);
+
+
   const upcomingGames = props.upcoming?.response;
-//   const params = useParams();
-//   console.log("params dashboard", params);
+  //   const params = useParams();
+  //   console.log("params dashboard", params);
   //   format (new Date(2021, 1, 11), "dd/MM/yyyy")
   //   const dates = [new props?..fixture?.date]
 
@@ -15,11 +17,10 @@ const UpcomingMatches = (props) => {
     <>
       <div>
         <div>
-            <SideBar/>
+          <SideBar />
           <h1 style={{ textAlign: "center" }}>Upcoming Matches (EPL)</h1>
           {upcomingGames?.map((item) => {
             return (
-              // {(item?.fixture?.status?.long).filter(long=>long==="null")}
               <div
                 key={item?.fixture?.id}
                 style={{
@@ -29,7 +30,11 @@ const UpcomingMatches = (props) => {
                   margin: "20px",
                   padding: "20px",
                 }}
+                onClick={() => {
+                  console.log("individual match clicked");
+                }}
               >
+                <Link to="/upcomingmatches/individualmatch"></Link>
                 <div>
                   <img
                     src={item?.teams?.home?.logo}

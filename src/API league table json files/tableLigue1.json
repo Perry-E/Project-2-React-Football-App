@@ -1,0 +1,929 @@
+{
+    "get": "standings",
+    "parameters": {
+      "league": "61",
+      "season": "2021"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "country": "France",
+          "logo": "https://media.api-sports.io/football/leagues/61.png",
+          "flag": "https://media.api-sports.io/flags/fr.svg",
+          "season": 2021,
+          "standings": [
+            [
+              {
+                "rank": 1,
+                "team": {
+                  "id": 85,
+                  "name": "Paris Saint Germain",
+                  "logo": "https://media.api-sports.io/football/teams/85.png"
+                },
+                "points": 24,
+                "goalsDiff": 13,
+                "group": "Ligue 1",
+                "form": "LWWWW",
+                "status": "same",
+                "description": "Promotion - Champions League (Group Stage)",
+                "all": {
+                  "played": 9,
+                  "win": 8,
+                  "draw": 0,
+                  "lose": 1,
+                  "goals": {
+                    "for": 22,
+                    "against": 9
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 4,
+                  "draw": 0,
+                  "lose": 0,
+                  "goals": {
+                    "for": 12,
+                    "against": 3
+                  }
+                },
+                "away": {
+                  "played": 5,
+                  "win": 4,
+                  "draw": 0,
+                  "lose": 1,
+                  "goals": {
+                    "for": 10,
+                    "against": 6
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 2,
+                "team": {
+                  "id": 116,
+                  "name": "Lens",
+                  "logo": "https://media.api-sports.io/football/teams/116.png"
+                },
+                "points": 18,
+                "goalsDiff": 6,
+                "group": "Ligue 1",
+                "form": "WWLWW",
+                "status": "same",
+                "description": "Promotion - Champions League (Group Stage)",
+                "all": {
+                  "played": 9,
+                  "win": 5,
+                  "draw": 3,
+                  "lose": 1,
+                  "goals": {
+                    "for": 16,
+                    "against": 10
+                  }
+                },
+                "home": {
+                  "played": 5,
+                  "win": 2,
+                  "draw": 2,
+                  "lose": 1,
+                  "goals": {
+                    "for": 7,
+                    "against": 5
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 3,
+                  "draw": 1,
+                  "lose": 0,
+                  "goals": {
+                    "for": 9,
+                    "against": 5
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 3,
+                "team": {
+                  "id": 84,
+                  "name": "Nice",
+                  "logo": "https://media.api-sports.io/football/teams/84.png"
+                },
+                "points": 16,
+                "goalsDiff": 13,
+                "group": "Ligue 1",
+                "form": "WWLDW",
+                "status": "same",
+                "description": "Promotion - Champions League (Qualification)",
+                "all": {
+                  "played": 8,
+                  "win": 5,
+                  "draw": 2,
+                  "lose": 1,
+                  "goals": {
+                    "for": 17,
+                    "against": 4
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 2,
+                  "draw": 2,
+                  "lose": 0,
+                  "goals": {
+                    "for": 8,
+                    "against": 3
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 3,
+                  "draw": 0,
+                  "lose": 1,
+                  "goals": {
+                    "for": 9,
+                    "against": 1
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 4,
+                "team": {
+                  "id": 77,
+                  "name": "Angers",
+                  "logo": "https://media.api-sports.io/football/teams/77.png"
+                },
+                "points": 16,
+                "goalsDiff": 5,
+                "group": "Ligue 1",
+                "form": "WDDLD",
+                "status": "same",
+                "description": "Promotion - Europa League (Group Stage)",
+                "all": {
+                  "played": 9,
+                  "win": 4,
+                  "draw": 4,
+                  "lose": 1,
+                  "goals": {
+                    "for": 14,
+                    "against": 9
+                  }
+                },
+                "home": {
+                  "played": 5,
+                  "win": 3,
+                  "draw": 1,
+                  "lose": 1,
+                  "goals": {
+                    "for": 9,
+                    "against": 6
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 1,
+                  "draw": 3,
+                  "lose": 0,
+                  "goals": {
+                    "for": 5,
+                    "against": 3
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 5,
+                "team": {
+                  "id": 81,
+                  "name": "Marseille",
+                  "logo": "https://media.api-sports.io/football/teams/81.png"
+                },
+                "points": 14,
+                "goalsDiff": 4,
+                "group": "Ligue 1",
+                "form": "LLDWW",
+                "status": "same",
+                "description": "Promotion - Europa Conference League (Qualification)",
+                "all": {
+                  "played": 8,
+                  "win": 4,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 14,
+                    "against": 10
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 2,
+                  "draw": 1,
+                  "lose": 1,
+                  "goals": {
+                    "for": 9,
+                    "against": 6
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 2,
+                  "draw": 1,
+                  "lose": 1,
+                  "goals": {
+                    "for": 5,
+                    "against": 4
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 6,
+                "team": {
+                  "id": 91,
+                  "name": "Monaco",
+                  "logo": "https://media.api-sports.io/football/teams/91.png"
+                },
+                "points": 14,
+                "goalsDiff": 3,
+                "group": "Ligue 1",
+                "form": "WWWDL",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 4,
+                  "draw": 2,
+                  "lose": 3,
+                  "goals": {
+                    "for": 14,
+                    "against": 11
+                  }
+                },
+                "home": {
+                  "played": 5,
+                  "win": 2,
+                  "draw": 1,
+                  "lose": 2,
+                  "goals": {
+                    "for": 7,
+                    "against": 6
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 2,
+                  "draw": 1,
+                  "lose": 1,
+                  "goals": {
+                    "for": 7,
+                    "against": 5
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 7,
+                "team": {
+                  "id": 97,
+                  "name": "Lorient",
+                  "logo": "https://media.api-sports.io/football/teams/97.png"
+                },
+                "points": 14,
+                "goalsDiff": 1,
+                "group": "Ligue 1",
+                "form": "DDWDW",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 3,
+                  "draw": 5,
+                  "lose": 1,
+                  "goals": {
+                    "for": 10,
+                    "against": 9
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 3,
+                  "draw": 1,
+                  "lose": 0,
+                  "goals": {
+                    "for": 5,
+                    "against": 2
+                  }
+                },
+                "away": {
+                  "played": 5,
+                  "win": 0,
+                  "draw": 4,
+                  "lose": 1,
+                  "goals": {
+                    "for": 5,
+                    "against": 7
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 8,
+                "team": {
+                  "id": 79,
+                  "name": "Lille",
+                  "logo": "https://media.api-sports.io/football/teams/79.png"
+                },
+                "points": 14,
+                "goalsDiff": -1,
+                "group": "Ligue 1",
+                "form": "WWWLL",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 4,
+                  "draw": 2,
+                  "lose": 3,
+                  "goals": {
+                    "for": 13,
+                    "against": 14
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 3,
+                  "draw": 0,
+                  "lose": 1,
+                  "goals": {
+                    "for": 6,
+                    "against": 6
+                  }
+                },
+                "away": {
+                  "played": 5,
+                  "win": 1,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 7,
+                    "against": 8
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 9,
+                "team": {
+                  "id": 83,
+                  "name": "Nantes",
+                  "logo": "https://media.api-sports.io/football/teams/83.png"
+                },
+                "points": 13,
+                "goalsDiff": 3,
+                "group": "Ligue 1",
+                "form": "WLWWL",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 4,
+                  "draw": 1,
+                  "lose": 4,
+                  "goals": {
+                    "for": 13,
+                    "against": 10
+                  }
+                },
+                "home": {
+                  "played": 5,
+                  "win": 3,
+                  "draw": 0,
+                  "lose": 2,
+                  "goals": {
+                    "for": 7,
+                    "against": 4
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 1,
+                  "draw": 1,
+                  "lose": 2,
+                  "goals": {
+                    "for": 6,
+                    "against": 6
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 10,
+                "team": {
+                  "id": 80,
+                  "name": "Lyon",
+                  "logo": "https://media.api-sports.io/football/teams/80.png"
+                },
+                "points": 13,
+                "goalsDiff": 1,
+                "group": "Ligue 1",
+                "form": "DDWLW",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 3,
+                  "draw": 4,
+                  "lose": 2,
+                  "goals": {
+                    "for": 14,
+                    "against": 13
+                  }
+                },
+                "home": {
+                  "played": 5,
+                  "win": 2,
+                  "draw": 3,
+                  "lose": 0,
+                  "goals": {
+                    "for": 11,
+                    "against": 7
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 1,
+                  "draw": 1,
+                  "lose": 2,
+                  "goals": {
+                    "for": 3,
+                    "against": 6
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 11,
+                "team": {
+                  "id": 94,
+                  "name": "Rennes",
+                  "logo": "https://media.api-sports.io/football/teams/94.png"
+                },
+                "points": 12,
+                "goalsDiff": 3,
+                "group": "Ligue 1",
+                "form": "WDWLL",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 3,
+                  "draw": 3,
+                  "lose": 3,
+                  "goals": {
+                    "for": 12,
+                    "against": 9
+                  }
+                },
+                "home": {
+                  "played": 5,
+                  "win": 3,
+                  "draw": 1,
+                  "lose": 1,
+                  "goals": {
+                    "for": 10,
+                    "against": 3
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 0,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 2,
+                    "against": 6
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 12,
+                "team": {
+                  "id": 95,
+                  "name": "Strasbourg",
+                  "logo": "https://media.api-sports.io/football/teams/95.png"
+                },
+                "points": 11,
+                "goalsDiff": -1,
+                "group": "Ligue 1",
+                "form": "DLWWL",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 3,
+                  "draw": 2,
+                  "lose": 4,
+                  "goals": {
+                    "for": 13,
+                    "against": 14
+                  }
+                },
+                "home": {
+                  "played": 5,
+                  "win": 2,
+                  "draw": 1,
+                  "lose": 2,
+                  "goals": {
+                    "for": 8,
+                    "against": 6
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 1,
+                  "draw": 1,
+                  "lose": 2,
+                  "goals": {
+                    "for": 5,
+                    "against": 8
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 13,
+                "team": {
+                  "id": 82,
+                  "name": "Montpellier",
+                  "logo": "https://media.api-sports.io/football/teams/82.png"
+                },
+                "points": 10,
+                "goalsDiff": 0,
+                "group": "Ligue 1",
+                "form": "DLDDW",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 2,
+                  "draw": 4,
+                  "lose": 3,
+                  "goals": {
+                    "for": 16,
+                    "against": 16
+                  }
+                },
+                "home": {
+                  "played": 5,
+                  "win": 2,
+                  "draw": 2,
+                  "lose": 1,
+                  "goals": {
+                    "for": 11,
+                    "against": 8
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 0,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 5,
+                    "against": 8
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 14,
+                "team": {
+                  "id": 93,
+                  "name": "Reims",
+                  "logo": "https://media.api-sports.io/football/teams/93.png"
+                },
+                "points": 10,
+                "goalsDiff": -1,
+                "group": "Ligue 1",
+                "form": "LWLDW",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 2,
+                  "draw": 4,
+                  "lose": 3,
+                  "goals": {
+                    "for": 10,
+                    "against": 11
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 1,
+                  "draw": 2,
+                  "lose": 1,
+                  "goals": {
+                    "for": 6,
+                    "against": 6
+                  }
+                },
+                "away": {
+                  "played": 5,
+                  "win": 1,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 4,
+                    "against": 5
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 15,
+                "team": {
+                  "id": 99,
+                  "name": "Clermont Foot",
+                  "logo": "https://media.api-sports.io/football/teams/99.png"
+                },
+                "points": 10,
+                "goalsDiff": -8,
+                "group": "Ligue 1",
+                "form": "DLLDL",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 2,
+                  "draw": 4,
+                  "lose": 3,
+                  "goals": {
+                    "for": 12,
+                    "against": 20
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 1,
+                  "draw": 2,
+                  "lose": 1,
+                  "goals": {
+                    "for": 6,
+                    "against": 6
+                  }
+                },
+                "away": {
+                  "played": 5,
+                  "win": 1,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 6,
+                    "against": 14
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 16,
+                "team": {
+                  "id": 78,
+                  "name": "Bordeaux",
+                  "logo": "https://media.api-sports.io/football/teams/78.png"
+                },
+                "points": 7,
+                "goalsDiff": -9,
+                "group": "Ligue 1",
+                "form": "LDDWL",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 1,
+                  "draw": 4,
+                  "lose": 4,
+                  "goals": {
+                    "for": 11,
+                    "against": 20
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 0,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 4,
+                    "against": 7
+                  }
+                },
+                "away": {
+                  "played": 5,
+                  "win": 1,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 7,
+                    "against": 13
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 17,
+                "team": {
+                  "id": 110,
+                  "name": "Estac Troyes",
+                  "logo": "https://media.api-sports.io/football/teams/110.png"
+                },
+                "points": 6,
+                "goalsDiff": -6,
+                "group": "Ligue 1",
+                "form": "LDLDW",
+                "status": "same",
+                "description": null,
+                "all": {
+                  "played": 9,
+                  "win": 1,
+                  "draw": 3,
+                  "lose": 5,
+                  "goals": {
+                    "for": 8,
+                    "against": 14
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 0,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 4,
+                    "against": 6
+                  }
+                },
+                "away": {
+                  "played": 5,
+                  "win": 1,
+                  "draw": 1,
+                  "lose": 3,
+                  "goals": {
+                    "for": 4,
+                    "against": 8
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 18,
+                "team": {
+                  "id": 112,
+                  "name": "Metz",
+                  "logo": "https://media.api-sports.io/football/teams/112.png"
+                },
+                "points": 6,
+                "goalsDiff": -8,
+                "group": "Ligue 1",
+                "form": "LWLLL",
+                "status": "same",
+                "description": "Ligue 1 (Relegation)",
+                "all": {
+                  "played": 9,
+                  "win": 1,
+                  "draw": 3,
+                  "lose": 5,
+                  "goals": {
+                    "for": 11,
+                    "against": 19
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 0,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 5,
+                    "against": 8
+                  }
+                },
+                "away": {
+                  "played": 5,
+                  "win": 1,
+                  "draw": 1,
+                  "lose": 3,
+                  "goals": {
+                    "for": 6,
+                    "against": 11
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 19,
+                "team": {
+                  "id": 106,
+                  "name": "Stade Brestois 29",
+                  "logo": "https://media.api-sports.io/football/teams/106.png"
+                },
+                "points": 4,
+                "goalsDiff": -8,
+                "group": "Ligue 1",
+                "form": "LLLDD",
+                "status": "same",
+                "description": "Relegation - Ligue 2",
+                "all": {
+                  "played": 9,
+                  "win": 0,
+                  "draw": 4,
+                  "lose": 5,
+                  "goals": {
+                    "for": 10,
+                    "against": 18
+                  }
+                },
+                "home": {
+                  "played": 4,
+                  "win": 0,
+                  "draw": 2,
+                  "lose": 2,
+                  "goals": {
+                    "for": 5,
+                    "against": 8
+                  }
+                },
+                "away": {
+                  "played": 5,
+                  "win": 0,
+                  "draw": 2,
+                  "lose": 3,
+                  "goals": {
+                    "for": 5,
+                    "against": 10
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              },
+              {
+                "rank": 20,
+                "team": {
+                  "id": 1063,
+                  "name": "Saint Etienne",
+                  "logo": "https://media.api-sports.io/football/teams/1063.png"
+                },
+                "points": 4,
+                "goalsDiff": -10,
+                "group": "Ligue 1",
+                "form": "DLLLL",
+                "status": "same",
+                "description": "Relegation - Ligue 2",
+                "all": {
+                  "played": 9,
+                  "win": 0,
+                  "draw": 4,
+                  "lose": 5,
+                  "goals": {
+                    "for": 8,
+                    "against": 18
+                  }
+                },
+                "home": {
+                  "played": 5,
+                  "win": 0,
+                  "draw": 3,
+                  "lose": 2,
+                  "goals": {
+                    "for": 4,
+                    "against": 8
+                  }
+                },
+                "away": {
+                  "played": 4,
+                  "win": 0,
+                  "draw": 1,
+                  "lose": 3,
+                  "goals": {
+                    "for": 4,
+                    "against": 10
+                  }
+                },
+                "update": "2021-10-03T00:00:00+00:00"
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  }
