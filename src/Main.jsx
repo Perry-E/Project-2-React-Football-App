@@ -4,10 +4,16 @@ import { Route, Switch } from "react-router-dom";
 import LeagueStandingsEpl from "./Components/League Standings/LeagueStandingsEpl";
 import LeagueStandingsLaLiga from "./Components/League Standings/LeagueStandingsLaLiga";
 import LeagueStandingsBundesliga from "./Components/League Standings/LeagueStandingsBundesliga";
-import LeagueStandingsSerieA from "./Components/League Standings/LeagueStandingsSerieA"
-import LeagueStandingsLigue1 from "./Components/League Standings/LeagueStandingsLigue1"
-import UpcomingMatches from "./Components/UpcomingMatches";
+import LeagueStandingsSerieA from "./Components/League Standings/LeagueStandingsSerieA";
+import LeagueStandingsLigue1 from "./Components/League Standings/LeagueStandingsLigue1";
+import UpcomingMatchesEpl from "./Components/Upcoming Matches/UpcomingMatchesEpl";
+import UpcomingMatchesLaLiga from "./Components/Upcoming Matches/UpcomingMatchesLaLiga";
+import UpcomingMatchesBundesliga from "./Components/Upcoming Matches/UpcomingMatchesBundesliga";
+import UpcomingMatchesSerieA from "./Components/Upcoming Matches/UpcomingMatchesSerieA";
+import UpcomingMatchesLigue1 from "./Components/Upcoming Matches/UpcomingMatchesLigue1";
+
 import IndividualMatches from "./Components/IndividualMatch";
+
 import SideBar from "./Components/SideBar";
 
 const Main = (props) => {
@@ -33,8 +39,20 @@ const Main = (props) => {
         <Route path="/LeagueStandings/Ligue1">
           <LeagueStandingsLigue1 leagueTable={props.leagueTable} />
         </Route>
-        <Route path="/UpcomingMatches">
-          <UpcomingMatches upcoming={props.upcoming} />
+        <Route path="/UpcomingMatches/EPL">
+          <UpcomingMatchesEpl upcoming={props.upcoming} />
+        </Route>
+        <Route path="/UpcomingMatches/LaLiga">
+          <UpcomingMatchesLaLiga upcoming={props.upcoming} />
+        </Route>
+        <Route path="/UpcomingMatches/Bundesliga">
+          <UpcomingMatchesBundesliga upcoming={props.upcoming} />
+        </Route>
+        <Route path="/UpcomingMatches/SerieA">
+          <UpcomingMatchesSerieA upcoming={props.upcoming} />
+        </Route>
+        <Route path="/UpcomingMatches/Ligue1">
+          <UpcomingMatchesLigue1 upcoming={props.upcoming} />
         </Route>
         <Route path="/individualmatch">
           <IndividualMatches upcoming={props.upcoming} />

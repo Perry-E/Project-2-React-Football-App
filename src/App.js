@@ -3,11 +3,16 @@ import Main from "./Main";
 import "./App.css";
 import tableEpl from "./API league table json files/tableEpl.json";
 import tableLaLiga from "./API league table json files/tableLaLiga.json";
-import tableBundesliga from "./API league table json files/tableBundesliga.json"
-import tableSerieA from "./API league table json files/tableSerieA.json"
-import tableLigue1 from "./API league table json files/tableLigue1.json"
+import tableBundesliga from "./API league table json files/tableBundesliga.json";
+import tableSerieA from "./API league table json files/tableSerieA.json";
+import tableLigue1 from "./API league table json files/tableLigue1.json";
 
-import fixturesEpl from "./API fixtures json files/fixturesEpl.json"
+import fixturesEpl from "./API fixtures json files/fixturesEpl.json";
+import fixturesLaLiga from "./API fixtures json files/fixturesLaLiga.json";
+import fixturesBundesliga from "./API fixtures json files/fixturesBundesliga.json";
+import fixturesSerieA from "./API fixtures json files/fixturesSerieA.json";
+import fixturesLigue1 from "./API fixtures json files/fixturesLigue1.json";
+
 function App() {
   // const API_Key = process.env.REACT_APP_API_FOOTBALL_KEY;
   // const [status, setStatus] = useState("idle");
@@ -77,29 +82,49 @@ function App() {
   // console.log("League Table (App)", leagueTable);
 
   //TODO league fixtures json
-  console.log("EPL fixtures", fixturesEpl)
+  console.log("EPL fixtures", fixturesEpl);
+  console.log("La Liga fixtures", fixturesLaLiga);
+  console.log("Bundesliga fixtures", fixturesBundesliga);
+  console.log("Serie A fixtures", fixturesSerieA);
+  console.log("Ligue 1 fixtures", fixturesLigue1);
   const [upcoming, setUpcoming] = useState();
-  useEffect(()=>{
-    setUpcoming(fixturesEpl)
-  }, [])
+  useEffect(() => {
+    setUpcoming([
+      fixturesEpl,
+      fixturesLaLiga,
+      fixturesBundesliga,
+      fixturesSerieA,
+      fixturesLigue1,
+    ]);
+  }, []);
 
   //TODO league table json
   console.log("EPL table", tableEpl);
-  console.log("La Liga table", tableLaLiga)
-  console.log("Bundesliga table", tableBundesliga)
-  console.log("Serie A table", tableSerieA)
-  console.log("Ligue 1 table", tableLigue1)
+  console.log("La Liga table", tableLaLiga);
+  console.log("Bundesliga table", tableBundesliga);
+  console.log("Serie A table", tableSerieA);
+  console.log("Ligue 1 table", tableLigue1);
   const [leagueTable, setLeagueTable] = useState();
-  useEffect(()=>{
+  useEffect(() => {
     setLeagueTable(tableEpl);
-    setLeagueTable([tableEpl, tableLaLiga, tableBundesliga, tableSerieA, tableLigue1])
-  }, [])
-  console.log("League total", leagueTable)
+    setLeagueTable([
+      tableEpl,
+      tableLaLiga,
+      tableBundesliga,
+      tableSerieA,
+      tableLigue1,
+    ]);
+  }, []);
+  console.log("League total", leagueTable);
 
   return (
     <div className="App">
       <header className="App-header">
-        <Main style={{ fontFamily: "sans-serif" }} leagueTable={leagueTable} upcoming={upcoming}/>
+        <Main
+          style={{ fontFamily: "sans-serif" }}
+          leagueTable={leagueTable}
+          upcoming={upcoming}
+        />
         {/*upcoming={upcoming} leagueTable={leagueTable} ADD TO <MAIN/>*/}
       </header>
     </div>
