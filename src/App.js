@@ -82,11 +82,11 @@ function App() {
   // console.log("League Table (App)", leagueTable);
 
   //TODO league fixtures json
-  console.log("EPL fixtures", fixturesEpl);
-  console.log("La Liga fixtures", fixturesLaLiga);
-  console.log("Bundesliga fixtures", fixturesBundesliga);
-  console.log("Serie A fixtures", fixturesSerieA);
-  console.log("Ligue 1 fixtures", fixturesLigue1);
+  // console.log("EPL fixtures", fixturesEpl);
+  // console.log("La Liga fixtures", fixturesLaLiga);
+  // console.log("Bundesliga fixtures", fixturesBundesliga);
+  // console.log("Serie A fixtures", fixturesSerieA);
+  // console.log("Ligue 1 fixtures", fixturesLigue1);
   const [upcoming, setUpcoming] = useState();
   useEffect(() => {
     setUpcoming([
@@ -99,11 +99,11 @@ function App() {
   }, []);
 
   //TODO league table json
-  console.log("EPL table", tableEpl);
-  console.log("La Liga table", tableLaLiga);
-  console.log("Bundesliga table", tableBundesliga);
-  console.log("Serie A table", tableSerieA);
-  console.log("Ligue 1 table", tableLigue1);
+  // console.log("EPL table", tableEpl);
+  // console.log("La Liga table", tableLaLiga);
+  // console.log("Bundesliga table", tableBundesliga);
+  // console.log("Serie A table", tableSerieA);
+  // console.log("Ligue 1 table", tableLigue1);
   const [leagueTable, setLeagueTable] = useState();
   useEffect(() => {
     setLeagueTable(tableEpl);
@@ -115,7 +115,14 @@ function App() {
       tableLigue1,
     ]);
   }, []);
-  console.log("League total", leagueTable);
+  // console.log("League total", leagueTable);
+
+  const [individual, setIndividual] = useState();
+  const handleClick = (event) =>{
+      console.log("individual match clicked")
+      setIndividual(event.currentTarget)
+      console.log("individual state", individual)
+  }
 
   return (
     <div className="App">
@@ -124,6 +131,7 @@ function App() {
           style={{ fontFamily: "sans-serif" }}
           leagueTable={leagueTable}
           upcoming={upcoming}
+          onClick={handleClick}
         />
         {/*upcoming={upcoming} leagueTable={leagueTable} ADD TO <MAIN/>*/}
       </header>

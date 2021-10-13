@@ -1,7 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
@@ -9,8 +8,53 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import SportsSoccerSharpIcon from "@mui/icons-material/SportsSoccerSharp";
 import { Link } from "react-router-dom";
+import { styled, alpha } from "@mui/material/styles";
+import IconButton from "@mui/material/IconButton";
+import InputBase from "@mui/material/InputBase";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
 
 export default function SideBar() {
+  const Search = styled("div")(({ theme }) => ({
+    position: "relative",
+    borderRadius: theme.shape.borderRadius,
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    "&:hover": {
+      backgroundColor: alpha(theme.palette.common.white, 0.25),
+    },
+    marginRight: theme.spacing(2),
+    marginLeft: 0,
+    width: "100%",
+    [theme.breakpoints.up("sm")]: {
+      marginLeft: theme.spacing(3),
+      width: "auto",
+    },
+  }));
+
+  const SearchIconWrapper = styled("div")(({ theme }) => ({
+    padding: theme.spacing(0, 2),
+    height: "100%",
+    position: "absolute",
+    pointerEvents: "none",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }));
+
+  const StyledInputBase = styled(InputBase)(({ theme }) => ({
+    color: "inherit",
+    "& .MuiInputBase-input": {
+      padding: theme.spacing(1, 1, 1, 0),
+      // vertical padding + font size from searchIcon
+      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+      transition: theme.transitions.create("width"),
+      width: "100%",
+      [theme.breakpoints.up("md")]: {
+        width: "20ch",
+      },
+    },
+  }));
+
   const [state, setState] = React.useState({
     // top: false,
     left: false,
@@ -37,22 +81,6 @@ export default function SideBar() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <input
-          style={{ textAlign: "center", fontFamily: "Roboto" }}
-          placeholder="Search"
-        ></input>
-        <button
-          onClick={() => {
-            console.log("search clicked");
-          }}
-          style={{
-            textDecoration: "none",
-            color: "black",
-            fontFamily: "Roboto",
-          }}
-        >
-          Search
-        </button>
         {
           <>
             <div>
@@ -351,7 +379,9 @@ export default function SideBar() {
     >
       {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <IconButton onClick={toggleDrawer(anchor, true)}>
+            <MenuIcon />
+          </IconButton>
           <h1
             style={{
               textAlignVertical: "center",
@@ -366,6 +396,15 @@ export default function SideBar() {
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
           >
+            <Search style={{ margin: "20px 0px 0px 0px" }}>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ "aria-label": "search" }}
+              />
+            </Search>
             {list(anchor)}
           </Drawer>
         </React.Fragment>
